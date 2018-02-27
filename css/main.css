@@ -2,15 +2,207 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
-.example {
+.example h1 {
   font-family: sans-serif;
   padding: 50px;
-}
-.example h1 {
   font-size: 10vw;
   color: blue;
   margin: 0;
-}
-.example p {
   line-height: 1.6;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 320px [col-start]);
+  grid-template-rows: repeat(50, 30px [row-start]) auto;
+}
+
+.titlee {
+  font-family: avenir;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-left: 50px;
+  color: rgba(206, 127, 117, 1);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.byline {
+  font-family: avenir;
+  font-size: 1rem;
+  color: rgba(206, 127, 117, 1);
+  margin-left: 50px;
+  margin-top: 15px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.sources {
+  font-family: avenir;
+  font-size: 1rem;
+  color: rgba(206, 127, 117, 1);
+  margin-left: 50px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 4;
+  margin-top: 5px;
+}
+.bodytext1 {
+  font-family: baskerville;
+  font-size: 0.875rem;
+  color: black;
+  margin-left: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+}
+.bodytext2 {
+  font-family: garamond;
+  font-size: 0.875rem;
+  color: black;
+  margin-left: 50px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+}
+.quote {
+  font-family: avenir;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+  grid-column-start: 3;
+  grid-row-start: 20;
+  margin-left: 50px;
+  color: rgba(206, 127, 117, 1);
+}
+.images {
+  margin-left: 50px;
+  grid-column-start: 3;
+  grid-row-start: 5;
+  width: 230px;
+  font-family: avenir;
+  font-size: 0.75rem;
+  font-style: oblique;
+}
+
+.imagesbib {
+  margin-left: 50px;
+  grid-column-start: 1;
+  grid-column-end: span 6;
+  grid-row-start: 30;
+  width: 590px;
+  font-family: avenir;
+  font-size: 0.75rem;
+  font-style: oblique;
+}
+
+.images2 {
+  margin-left: 50px;
+  grid-column-start: 3;
+  grid-row-start: 24;
+  width: 230px;
+  font-family: avenir;
+  font-size: 0.75rem;
+  font-style: oblique;
+}
+.images3 {
+  margin-left: 50px;
+  grid-column-start: 3;
+  grid-row-start: 18;
+  grid-row-end: span 18;
+  width: 230px;
+  font-family: avenir;
+  font-size: 0.75rem;
+  font-style: oblique;
+}
+
+/* tachyons */
+
+.f1 {
+  font-size: 3rem;
+}
+.f2 {
+  font-size: 2.25rem;
+}
+.f3 {
+  font-size: 1.5rem;
+}
+.f4 {
+  font-size: 1.25rem;
+}
+.f5 {
+  font-size: 1rem;
+}
+.f6 {
+  font-size: 0.875rem;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.strike {
+  text-decoration: line-through;
+}
+.ttc {
+  text-transform: capitalize;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+.serif {
+  font-family: georgia, times, serif;
+}
+.code {
+  font-family: Consolas, monaco, monospace;
+}
+.courier {
+  font-family: "Courier Next", courier, monospace;
+}
+.helvetica {
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+.avenir {
+  font-family: "avenir next", avenir, sans-serif;
+}
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+.georgia {
+  font-family: georgia, serif;
+}
+.times {
+  font-family: times, serif;
+}
+.bodoni {
+  font-family: "Bodoni MT", serif;
+}
+.calisto {
+  font-family: "Calisto MT", serif;
+}
+.garamond {
+  font-family: garamond, serif;
+}
+.baskerville {
+  font-family: baskerville, serif;
+}
+.measure-wide {
+  max-width: 45em;
+}
+.measure {
+  max-width: 35em;
+}
+.measure-narrow {
+  max-width: 28em;
+}
+.pink {
+  color: #d5008f;
 }
